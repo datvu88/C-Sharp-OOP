@@ -13,7 +13,12 @@ namespace _08.Events
             new Subscriber("Pesho", eventPublisher); //create subscribers for the event
             new Subscriber("Gosho", eventPublisher);
 
+            var strSubscriber = "test" + "sample"
+            new Subscriber(strSubscriber, eventPublisher);
+
             eventPublisher.RaiseSampleEvent(); //sample event is raised by the publisher and handled by the subscribers
+
+            // 
         }
     }
 }
